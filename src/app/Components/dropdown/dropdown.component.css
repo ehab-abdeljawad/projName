@@ -1,0 +1,13 @@
+.item-list{
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0 0 40px;
+}
+
+.item-list > li{
+    list-style-type: none;
+}

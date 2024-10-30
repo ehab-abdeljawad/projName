@@ -1,4 +1,6 @@
+import { ComponentPortal } from '@angular/cdk/portal';
 import { Component } from '@angular/core';
+import { PortalComponent } from './Components/portal/portal.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projName';
+  
 }

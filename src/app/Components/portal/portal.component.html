@@ -1,0 +1,26 @@
+<div>
+    <ng-template [cdkPortalOutlet]="templateportl"></ng-template>
+    <button (click)="setTemplateA()">Set Template A</button>
+    <button (click)="setTemplateB()">Set Template B</button>
+  </div>
+  
+  <div (mouseenter)="showTemplate()" (mouseleave)="hideTemplate()">
+    <ng-template [cdkPortalOutlet]="Havortemplate"></ng-template>
+    Hover on me
+  </div>
+  
+  <ng-template #templateA>
+    <h1>Template A</h1>
+  </ng-template>
+  
+  <ng-template #templateB>
+    <h1>Template B</h1>
+  </ng-template>
+  
+  <ng-template #hoverTemplate>
+    <div class="tooltip">
+      This is the tooltip content displayed on hover!
+      
+    </div>
+  </ng-template>
+  

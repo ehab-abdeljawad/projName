@@ -1,0 +1,48 @@
+<main>
+<div class="divimg">
+    <ng-template  [cdkPortalOutlet]="porteltemplate">
+
+    </ng-template>
+</div>
+
+<div class="divimg">
+    <ng-template  [cdkPortalOutlet]="porteltemplate2">
+
+    </ng-template>
+</div>
+
+<div class="divimg">
+    <ng-template  [cdkPortalOutlet]="porteltemplate">
+
+    </ng-template>
+</div>
+</main>
+
+<button (click)="settemplate()">
+    click
+</button>
+
+<section>
+    <ng-template [cdkPortalOutlet]="componentportal" >
+
+    </ng-template>
+</section>
+<button (click)="setComponent()">
+    click
+</button>
+
+
+
+
+
+<ng-template  #image >
+    <img src="../../../assets/pexels-j-carter-53083-713959.jpg"  width="300px" height="300px">
+</ng-template>
+
+<ng-template  #image2 >
+    <img src="../../../assets/pexels-bin-ziegler-588438-1364756.jpg"  width="300px" height="300px">
+</ng-template>
+
+<ng-template  #form >
+  <app-formspopup></app-formspopup>
+</ng-template>
